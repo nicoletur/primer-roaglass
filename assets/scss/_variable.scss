@@ -1,0 +1,24 @@
+$fuente-grande:'Cormorant Garamond', serif;
+$fuente-mediana:'Armata', sans-serif;
+$fuente-peque:'Quattrocento Sans', sans-serif;
+$tam-xltitulo: 3rem;
+$tam-titulo: 1.6rem;
+$tam-subtitulo: 1.4rem;
+$tam-parrafo: 1.2rem;
+
+$transition-duration: 0.3s;
+$transition-delay: 0.2s;
+
+$texto-azul:#340186;
+$texto-oscazul:rgb(13, 6, 53);
+$texto-azulclaro:rgb(177, 221, 223);
+
+$color-nav: rgb(177, 221, 223);
+$color-footer:rgb(18, 18, 82);
+$color-seccion:#f1ad92;
+
+$media-queries:
+(tablet: (breakpoint: '(min-width: 480px) and (max-width: 768px)',),
+ mobile: (breakpoint: '(max-width: 480px)'));
+
+

@@ -1,0 +1,368 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #d9dee0; }
+
+.no-gutters {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+/*NAVBAR*/
+.navbar {
+  background-color: #b1dddf; }
+
+.nav-link {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  color: #121252 !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  border-radius: 2rem; }
+
+.nav-item :hover {
+  box-shadow: inset 0 0 20px rgba(243, 9, 9, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff; }
+
+.logo {
+  width: 220px; }
+
+.LinkContact, .LinkQuien, .LinkGal, .LinkProduc, .LinkIndex {
+  color: #f14815 !important;
+  font-weight: 600; }
+
+/*PIE de PAGINA*/
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start center;
+  align-content: center;
+  background-color: #121252;
+  color: #b1dddf;
+  font-family: "Cormorant Garamond", serif; }
+  .footer__contacto {
+    width: calc(25% - 1rem);
+    text-align: center;
+    margin-top: 1em; }
+    .footer__contacto--icon {
+      width: 25px;
+      margin-left: 1em; }
+    @media (max-width: 850px) {
+      .footer__contacto {
+        width: calc(100% - 1rem);
+        padding: 1em; } }
+  .footer__direccion {
+    width: calc(25% - 1rem);
+    text-align: center;
+    margin-top: 1em; }
+    @media (max-width: 850px) {
+      .footer__direccion {
+        width: calc(50% - 1rem);
+        padding: 1em; } }
+  .footer__atencion {
+    text-align: center;
+    margin-top: 1em;
+    width: calc(25% - 1rem); }
+    @media (max-width: 850px) {
+      .footer__atencion {
+        width: calc(50% - 1rem);
+        padding: 1em; } }
+  .footer__maps {
+    text-align: center;
+    margin-top: 1em;
+    width: calc(25% - 1rem); }
+  .footer a {
+    position: relative;
+    display: block;
+    padding: 2px; }
+  .footer a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out; }
+  .footer a:hover::before {
+    transform: scaleX(1); }
+  .footer[data-animation="bonus"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94); }
+  @media (max-width: 850px) {
+    .footer .ocultar-div {
+      display: none; } }
+
+/* pagina de inicio */
+/*CAROUSEL*/
+.carousel-item {
+  height: 32VH;
+  margin-top: 6em; }
+  @media (min-width: 600px) and (max-width: 991px) {
+    .carousel-item {
+      height: 36vh;
+      margin-top: 5em; } }
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 40vh;
+      margin-top: 5em; } }
+  @media (min-width: 1208px) {
+    .carousel-item {
+      height: 48vh;
+      margin-top: 5em; } }
+
+/* imagenes del carousel */
+.slide1, .slide2, .slide3, .slide4 {
+  background: url(../css/img/people-calidez.jpg) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.slide2 {
+  background-image: url(../css/img/cosmetology-bath.jpg); }
+
+.slide3 {
+  background-image: url(../css/img/seguridad.jpg); }
+
+.slide4 {
+  background-image: url(../css/img/people-sonido.jpg); }
+
+.entertext {
+  width: auto;
+  margin-left: 1%;
+  margin-right: 1%; }
+  .entertext h2 {
+    margin-left: 15%;
+    line-height: 2em;
+    font-family: "Armata", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #240a46;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeInBottomRight;
+    animation-duration: 2s;
+    animation-iteration-count: 3; }
+  .entertext p {
+    font-family: "Quattrocento Sans", sans-serif;
+    margin: 0 1.2em;
+    margin-top: 1em;
+    font-size: 1.4rem;
+    font-weight: 200; }
+
+.Primer {
+  padding: 0.5em;
+  text-align: center; }
+  .Primer__imagen {
+    margin-left: 2em;
+    width: 10em;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    box-shadow: 0px 0px 3px 3px #161230; }
+  .Primer__texto--titulo {
+    color: #340186;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 2em;
+    animation: heartBeat;
+    animation-duration: 3s;
+    animation-iteration-count: 10; }
+  .Primer__texto--subtitulo {
+    margin-top: 1em;
+    color: #340186;
+    font-family: "Armata", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2em; }
+
+.categoriaProductos {
+  margin-top: 8em;
+  color: #340186;
+  font-family: "Cormorant Garamond", serif; }
+  .categoriaProductos h2 {
+    padding-bottom: 0.5em; }
+
+.proximoProducto {
+  background-color: #f1ad92;
+  background-size: contain; }
+
+.cualEs {
+  font-size: 2em;
+  margin-top: 1rem; }
+
+.listaProductos {
+  font-size: 1.4rem;
+  color: #0d0635; }
+  .listaProductos p a:link {
+    text-decoration: none; }
+
+.detalle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: -0.5rem; }
+  .detalle .separador {
+    border-top: blue 1px solid;
+    height: 2em;
+    width: 100%;
+    background: linear-gradient(to bottom, #92c3eb, #c6cfd1); }
+  .detalle__block {
+    margin: 0.5rem;
+    width: calc(50% - 1rem); }
+    @media (max-width: 800px) {
+      .detalle__block {
+        width: calc(100% - 1rem); } }
+  .detalle__block--grande {
+    margin: 0.5rem;
+    width: 100%; }
+    @media (max-width: 880px) {
+      .detalle__block--grande {
+        width: calc(100%-1rem); } }
+
+.texto {
+  padding: 0 5em; }
+  .texto__title {
+    font-size: 1.6rem;
+    line-height: 3em;
+    margin: 0 2em;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    color: #0d0635; }
+    @media (max-width: 800px) {
+      .texto__title {
+        font-size: 1.25rem; } }
+  .texto__text {
+    font-size: 1.2rem;
+    padding-bottom: 2em;
+    text-align: justify;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    color: #0d0635; }
+  .texto__imagen {
+    padding: 00.5em; }
+  .texto__imagen--tamaño {
+    width: 22rem;
+    height: 22rem; }
+  .texto__lista {
+    align-items: center;
+    padding: 1em; }
+  .texto__lista--lista {
+    list-style-image: url(../css/img/stained-glass-window.png);
+    color: #0d0635; }
+
+.ListImag {
+  margin: 5em 1em 2em 3em; }
+
+.imgTamaño {
+  width: 15em;
+  height: 15em;
+  padding: 1em; }
+
+.empresa {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 8em 0 1em 2em; }
+  .empresa__nuestra {
+    width: calc(70% - 1rem); }
+    @media (max-width: 800px) {
+      .empresa__nuestra {
+        width: calc(100% - 1rem); } }
+  .empresa__nuestra--titulo {
+    font-family: "Cormorant Garamond", serif;
+    color: #0d0635;
+    text-transform: uppercase;
+    text-decoration: underline #50fafa; }
+  .empresa__nuestra--texto {
+    text-align: justify;
+    color: #0d0635;
+    line-height: 2em;
+    font-family: "Armata", sans-serif;
+    font-weight: 600; }
+  .empresa__logo {
+    width: calc(30% - 1rem);
+    padding: 5em 0 0 3em; }
+    @media (max-width: 800px) {
+      .empresa__logo {
+        width: calc(100% - 1rem);
+        padding: 1em; } }
+
+.porque > h2 {
+  width: 100%;
+  text-align: center;
+  padding: 2em 1em;
+  color: #340186;
+  font-size: 23pt;
+  text-transform: uppercase;
+  font-family: "Cormorant Garamond", serif; }
+
+.div-imagen {
+  display: inline-block;
+  position: relative;
+  margin: 3em; }
+
+.div-imagen > div {
+  position: absolute;
+  z-index: -1; }
+
+.desvanecer {
+  width: 100%; }
+
+.desvanecer:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms; }
+
+/* Pagina Contacto */
+.marginTop {
+  padding-top: 6rem;
+  margin-left: auto; }
+
+.header {
+  color: #340186;
+  font-size: 1.6rem;
+  padding: 10px; }
+
+.colorBoton:hover {
+  color: #020202;
+  background: turquoise; }
+
+/* COSTADO CON IMAGENES */
+.aside {
+  margin-top: 7em;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap; }
+
+.aside > p {
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: #0d0635; }
+
+.aside > img {
+  width: 20em; }
+
+hr {
+  border: 0;
+  height: 2em;
+  margin-top: 1em;
+  box-shadow: inset 0 1em 2em -1.5em #2c16ec; }
+
+.pruebaif {
+  background: #d8a972; }
+  @media only screen and (max-width: 480px) {
+    .pruebaif {
+      background: #e7e367; } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .pruebaif {
+      background: #bae6e9; } }
