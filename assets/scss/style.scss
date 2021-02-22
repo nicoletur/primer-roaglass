@@ -130,7 +130,7 @@ body {
         /* imagenes del carousel */
         .slide1 {
             background: url(../css/img/5435089577_08a780296e_k.jpg) center center;
-            background-size: 70% 100%;
+            background-size: contain;
             background-repeat: no-repeat;
         }
         .slide2 {
@@ -250,8 +250,9 @@ body {
 .detalle {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    margin: -0.5rem;
+    justify-content: center;
+    text-align: center;
+    
     // linea de separacion
     .separador{
         border-top: blue 1px solid;
@@ -261,8 +262,9 @@ body {
         }
     &__block {
         margin: 0.5rem;
-        width: calc(50% - 1rem);
-        @media (max-width: 800px) { width: calc(100% - 1rem); }
+        width: calc(100% - 1rem);
+            @media (min-width: 800px) {
+            width: calc(50% - 1rem); }
     }
     &__block--grande { margin: 0.5rem;
         width:100%;
@@ -272,12 +274,10 @@ body {
 }
 // caracteristicas de la lista de productos
 .texto {
-    padding:0 5em;
 
     &__title {
         font-size: $tam-titulo;
         line-height: 3em;
-		margin:0 2em;
 		font-family: $fuente-grande;
 		font-weight: 600;
 		color: $texto-oscazul;
@@ -295,8 +295,8 @@ body {
     padding: 00.5em;
     }
     &__imagen--tamaño{
-        width: 22rem;
-        height: 22rem;
+        width: 20rem;
+        height: 20rem;
     }
     &__lista {
         align-items: center;

@@ -15,7 +15,7 @@ body {
 
 .nav-link {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #121252 !important;
   padding-right: 2rem !important;
   padding-left: 2rem !important;
@@ -112,7 +112,7 @@ body {
 /* imagenes del carousel */
 .slide1, .slide2, .slide3, .slide4, .slide5 {
   background: url(../css/img/5435089577_08a780296e_k.jpg) center center;
-  background-size: 70% 100%;
+  background-size: contain;
   background-repeat: no-repeat; }
 
 .slide2 {
@@ -135,7 +135,7 @@ body {
     margin-left: 15%;
     line-height: 2em;
     font-family: "Armata", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
     color: #240a46;
     display: inline-block;
@@ -147,7 +147,7 @@ body {
     font-family: "Quattrocento Sans", sans-serif;
     margin: 0 1.2em;
     margin-top: 1em;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 200; }
 
 .Primer {
@@ -173,7 +173,7 @@ body {
       color: #4d10af;
       font-family: "Cormorant Garamond", serif;
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 2rem;
       line-height: 2em;
       animation: heartBeat;
       animation-duration: 3s;
@@ -182,7 +182,7 @@ body {
       margin-top: 1em;
       color: #340186;
       font-family: "Armata", sans-serif;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2em; }
 
 .categoriaProductos {
@@ -209,8 +209,8 @@ body {
 .detalle {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  margin: -0.5rem; }
+  justify-content: center;
+  text-align: center; }
   .detalle .separador {
     border-top: blue 1px solid;
     height: 2em;
@@ -218,10 +218,10 @@ body {
     background: linear-gradient(to bottom, #92c3eb, #c6cfd1); }
   .detalle__block {
     margin: 0.5rem;
-    width: calc(50% - 1rem); }
-    @media (max-width: 800px) {
+    width: calc(100% - 1rem); }
+    @media (min-width: 800px) {
       .detalle__block {
-        width: calc(100% - 1rem); } }
+        width: calc(50% - 1rem); } }
   .detalle__block--grande {
     margin: 0.5rem;
     width: 100%; }
@@ -229,36 +229,38 @@ body {
       .detalle__block--grande {
         width: calc(100%-1rem); } }
 
-.texto {
-  padding: 0 5em; }
-  .texto__title {
-    font-size: 1.6rem;
-    line-height: 3em;
-    margin: 0 2em;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    color: #0d0635; }
-    @media (max-width: 800px) {
-      .texto__title {
-        font-size: 1.25rem; } }
-  .texto__text {
-    font-size: 1.2rem;
-    padding-bottom: 2em;
-    text-align: justify;
-    font-family: "Quattrocento Sans", sans-serif;
-    font-weight: 400;
-    color: #0d0635; }
-  .texto__imagen {
-    padding: 00.5em; }
-  .texto__imagen--tamaño {
-    width: 22rem;
-    height: 22rem; }
-  .texto__lista {
-    align-items: center;
-    padding: 1em; }
-  .texto__lista--lista {
-    list-style-image: url(../css/img/stained-glass-window.png);
-    color: #0d0635; }
+.texto__title {
+  font-size: 1.4rem;
+  line-height: 3em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  color: #0d0635; }
+  @media (max-width: 800px) {
+    .texto__title {
+      font-size: 1.25rem; } }
+
+.texto__text {
+  font-size: 1rem;
+  padding-bottom: 2em;
+  text-align: justify;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  color: #0d0635; }
+
+.texto__imagen {
+  padding: 00.5em; }
+
+.texto__imagen--tamaño {
+  width: 20rem;
+  height: 20rem; }
+
+.texto__lista {
+  align-items: center;
+  padding: 1em; }
+
+.texto__lista--lista {
+  list-style-image: url(../css/img/stained-glass-window.png);
+  color: #0d0635; }
 
 .ListImag {
   margin: 5em 1em 2em 3em; }
@@ -333,7 +335,7 @@ body {
 
 .header {
   color: #4d10af;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 10px; }
 
 .colorBoton:hover {
@@ -348,7 +350,7 @@ body {
   flex-flow: column wrap; }
 
 .aside > p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   letter-spacing: 2px;
   font-style: italic;
