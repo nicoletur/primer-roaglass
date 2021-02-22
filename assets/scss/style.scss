@@ -4,7 +4,7 @@
 * {box-sizing:border-box;
     }
 body {
-    background-color: #d9dee0;
+    background-color: #ffffff;
 }
     .no-gutters {
         padding-left: 0 !important;
@@ -46,33 +46,33 @@ body {
     font-family:$fuente-grande;
 
     &__contacto{
-        width: calc(25% - 1rem);
+        width: calc(100% - 1rem);
         text-align: center;
         margin-top: 1em;
             &--icon{
                 width: 25px;
                 margin-left: 1em;
                 }
-    @media (max-width: 850px) {
-        width: calc(100% - 1rem);
+    @media (min-width: 850px) {
+        width: calc(25% - 1rem);
         padding: 1em;
         }
     }
     &__direccion{
-        width: calc(25% - 1rem);
+        width: calc(100% - 1rem);
         text-align: center;
         margin-top: 1em;
-    @media (max-width: 850px) {
-        width: calc(50% - 1rem);
+    @media (min-width: 850px) {
+        width: calc(25% - 1rem);
         padding: 1em;
     }
     }
 &__atencion{
     text-align: center;
     margin-top: 1em;
-    width: calc(25% - 1rem);
-    @media (max-width: 850px) {
-        width: calc(50% - 1rem);
+    width: calc(100% - 1rem);
+    @media (min-width: 850px) {
+        width: calc(25% - 1rem);
         padding: 1em;
 }
 }
@@ -100,19 +100,18 @@ body {
             transition: transform 0.5s ease-in-out;
             }
                 & a:hover::before {
-                 transform: scaleX(1);
-                 }
-                 &[data-animation="bonus"] a:hover::before {
+                transform: scaleX(1);
+                }
+                &[data-animation="bonus"] a:hover::before {
                     transform-origin: left;
                     transform: scaleX(1);
                     transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
-                  }
-    
+                }
+
     @media (max-width: 850px) {
             .ocultar-div{
             display:none;
             }
-            
 }
 }
 
@@ -123,37 +122,34 @@ body {
             height: 32VH;
             margin-top: 6em;
 
-            @media (min-width: 600px) and (max-width: 991px) {
-                height: 36vh;
-                margin-top: 5em;
-                }
-            @media (min-width: 992px)  {
+            @media (min-width: 600px){
                 height: 40vh;
-                margin-top: 5em;
+                margin-top: 6em;
                 }
-            @media (min-width: 1208px) {
-                height:48vh;
-                margin-top: 5em;
-                }
-            }
+        }
         /* imagenes del carousel */
         .slide1 {
-            background: url(../css/img/people-calidez.jpg) center center;
-            background-size:contain;
+            background: url(../css/img/5435089577_08a780296e_k.jpg) center center;
+            background-size: 70% 100%;
             background-repeat: no-repeat;
         }
         .slide2 {
             @extend .slide1;
-            background-image: url(../css/img/cosmetology-bath.jpg);
+            background-image: url(../css/img/8161765355_1132304abb_k.jpg);
         }
         .slide3 {
             @extend .slide1;
-            background-image: url(../css/img/seguridad.jpg);
+            background-image: url(../css/img/balcony-2731137_1920.jpg);
         }
         .slide4 {
             @extend .slide1;
-            background-image: url(../css/img/people-sonido.jpg);
+            background-image: url(../css/img/garden-windows-3906221_1920.jpg);
         }
+        .slide5 {
+            @extend .slide1;
+            background-image: url(../css/img/shower-438928_1920.jpg);
+        }
+
 
     .entertext {
 	    width: auto;
@@ -181,16 +177,29 @@ body {
             }
     }
     .Primer {
-        padding: 0.5em;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 850px) {
+            width: calc(100% - 1rem);
+            flex-direction: row;
+            padding: 1em;
+        }
+
             &__imagen{
-                margin-left: 2em;
-                width: 10em;
-                border-radius:25%;
-                -webkit-border-radius:25%;
-                box-shadow: 0px 0px 3px 3px #161230;
+                width: calc(100% - 1rem);
+                &--imagen{
+                    width: 10em;
+                    border-radius:25%;
+                    -webkit-border-radius:25%;
+                    box-shadow: 0px 0px 3px 3px #161230;
                 }
-            &__texto--titulo {
+
+                }
+            &__texto{
+                width: calc(100% - 1rem);
+                text-align: center;
+            &--titulo {
                 color: $texto-azul;
                 font-family: $fuente-grande;
                 font-weight:bold;
@@ -200,7 +209,7 @@ body {
                 animation-duration: 3s;
                 animation-iteration-count: 10;
 			}
-            &__texto--subtitulo {
+            &--subtitulo {
                 margin-top: 1em;
                 color: #340186;
                 font-family: $fuente-mediana;
@@ -209,6 +218,7 @@ body {
                 line-height: 2em;
                 }
     }
+}
 
      // pagina productos
 //linea Consulta con nosotros
