@@ -22,9 +22,10 @@ body {
     padding-right: 2rem !important;
     padding-left: 2rem !important;
     border-radius: 2rem;
+    font-weight: 500;
     }
 	.nav-item :hover {
-		box-shadow: inset 0 0 20px rgba(243, 9, 9, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+		box-shadow: inset 0 0 20px rgba(150, 229, 235, 0.5), 0 0 20px rgba(9, 184, 238, 0.4);
 		outline-offset: 80px;
 		text-shadow: 1px 1px 6px #fff;
 		}
@@ -32,7 +33,7 @@ body {
     width: 220px;
     }
 .LinkContact, .LinkQuien, .LinkGal, .LinkProduc, .LinkIndex {
-    color: rgb(241, 72, 21)!important;
+    color: rgb(73, 128, 211)!important;
     font-weight: 600;
     }
 /*PIE de PAGINA*/
@@ -44,6 +45,7 @@ body {
     background-color: $color-footer;
     color:  $texto-azulclaro;
     font-family:$fuente-grande;
+    font-weight: 700;
 
     &__contacto{
         width: calc(100% - 1rem);
@@ -448,4 +450,50 @@ body {
 		}
 	}
 
+    .portada{
+        background: url(../css/img/5435089577_08a780296e_k.jpg) no-repeat center center;
+        background-size: 100% 100%;
+        height: 40em;
+        max-width: 100%;
+        margin-top: 1.5em;
+    }
+    @media (max-width:780px) {
+        .portada{
+            background: url(../css/img/florero.webp) no-repeat center center; 
+            background-size: 100% 100%;
+            height: 30em;
+            max-width: 100%;
+            margin-top: 5em;
+            .portadaParrafo{
+                width: 40%;
+                height: 18em;
+                background-color: transparentize($color: #ffffff, $amount:0.6);
+                color:$texto-oscazul;
+                font-family: 'Cinzel Decorative', cursive;
+                position: absolute;
+                z-index: 1;
+                top:20em ;
+            }
+        
+    }
+}
+    .portadaParrafo{
+        width: 100%;
+        height: 8em;
+        background-color: transparentize($color: #ffffff, $amount:0.6);
+        color:$texto-oscazul;
+        font-family: 'Cinzel Decorative', cursive;
+        position: absolute;
+        z-index: 1;
+        top:34em ;
+    }
 
+    .imagenFondo{
+        background-color: #FFFFFF;
+        top: 8.5em;
+        height: 54vh;
+        max-width: 100%;
+    }
+    .transparente{
+        opacity: 0.5;
+    }

@@ -11,7 +11,7 @@ body {
 
 /*NAVBAR*/
 .navbar {
-  background-color: #8febf0; }
+  background-color: white; }
 
 .nav-link {
   font-family: "Cormorant Garamond", serif;
@@ -19,10 +19,11 @@ body {
   color: #121252 !important;
   padding-right: 2rem !important;
   padding-left: 2rem !important;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  font-weight: 500; }
 
 .nav-item :hover {
-  box-shadow: inset 0 0 20px rgba(243, 9, 9, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  box-shadow: inset 0 0 20px rgba(150, 229, 235, 0.5), 0 0 20px rgba(9, 184, 238, 0.4);
   outline-offset: 80px;
   text-shadow: 1px 1px 6px #fff; }
 
@@ -30,7 +31,7 @@ body {
   width: 220px; }
 
 .LinkContact, .LinkQuien, .LinkGal, .LinkProduc, .LinkIndex {
-  color: #f14815 !important;
+  color: #4980d3 !important;
   font-weight: 600; }
 
 /*PIE de PAGINA*/
@@ -39,9 +40,10 @@ body {
   flex-flow: row wrap;
   justify-content: flex-start center;
   align-content: center;
-  background-color: #0c0c33;
-  color: #dbf4f5;
-  font-family: "Cormorant Garamond", serif; }
+  background-color: #020f1a;
+  color: #c8d6ec;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700; }
   .footer__contacto {
     width: calc(100% - 1rem);
     text-align: center;
@@ -134,7 +136,7 @@ body {
   .entertext h2 {
     margin-left: 15%;
     line-height: 2em;
-    font-family: "Armata", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
     color: #240a46;
@@ -144,7 +146,7 @@ body {
     animation-duration: 2s;
     animation-iteration-count: 3; }
   .entertext p {
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 1.2em;
     margin-top: 1em;
     font-size: 1.2rem;
@@ -170,7 +172,7 @@ body {
     width: calc(100% - 1rem);
     text-align: center; }
     .Primer__texto--titulo {
-      color: #4d10af;
+      color: #020f1a 5;
       font-family: "Cormorant Garamond", serif;
       font-weight: bold;
       font-size: 2rem;
@@ -181,13 +183,13 @@ body {
     .Primer__texto--subtitulo {
       margin-top: 1em;
       color: #340186;
-      font-family: "Armata", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 1.4rem;
       line-height: 2em; }
 
 .categoriaProductos {
   margin-top: 8em;
-  color: #4d10af;
+  color: #020f1a 5;
   font-family: "Cormorant Garamond", serif; }
   .categoriaProductos h2 {
     padding-bottom: 0.5em; }
@@ -202,7 +204,7 @@ body {
 
 .listaProductos {
   font-size: 1.4rem;
-  color: #0d0635; }
+  color: #020f1a; }
   .listaProductos p a:link {
     text-decoration: none; }
 
@@ -234,7 +236,7 @@ body {
   line-height: 3em;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  color: #0d0635; }
+  color: #020f1a; }
   @media (max-width: 800px) {
     .texto__title {
       font-size: 1.25rem; } }
@@ -243,9 +245,9 @@ body {
   font-size: 1rem;
   padding-bottom: 2em;
   text-align: justify;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  color: #0d0635; }
+  color: #020f1a; }
 
 .texto__imagen {
   padding: 00.5em; }
@@ -260,7 +262,7 @@ body {
 
 .texto__lista--lista {
   list-style-image: url(../css/img/stained-glass-window.png);
-  color: #0d0635; }
+  color: #020f1a; }
 
 .ListImag {
   margin: 5em 1em 2em 3em; }
@@ -282,14 +284,14 @@ body {
         width: calc(100% - 1rem); } }
   .empresa__nuestra--titulo {
     font-family: "Cormorant Garamond", serif;
-    color: #0d0635;
+    color: #020f1a;
     text-transform: uppercase;
     text-decoration: underline #50fafa; }
   .empresa__nuestra--texto {
     text-align: justify;
-    color: #0d0635;
+    color: #020f1a;
     line-height: 2em;
-    font-family: "Armata", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600; }
   .empresa__logo {
     width: calc(30% - 1rem);
@@ -303,7 +305,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 2em 1em;
-  color: #4d10af;
+  color: #020f1a 5;
   font-size: 23pt;
   text-transform: uppercase;
   font-family: "Cormorant Garamond", serif; }
@@ -334,7 +336,7 @@ body {
   margin-left: auto; }
 
 .header {
-  color: #4d10af;
+  color: #020f1a 5;
   font-size: 1.4rem;
   padding: 10px; }
 
@@ -354,7 +356,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   font-style: italic;
-  color: #0d0635; }
+  color: #020f1a; }
 
 .aside > img {
   width: 20em; }
@@ -373,3 +375,46 @@ hr {
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     .pruebaif {
       background: #bae6e9; } }
+
+.portada {
+  background: url(../css/img/5435089577_08a780296e_k.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  height: 40em;
+  max-width: 100%;
+  margin-top: 1.5em; }
+
+@media (max-width: 780px) {
+  .portada {
+    background: url(../css/img/florero.webp) no-repeat center center;
+    background-size: 100% 100%;
+    height: 30em;
+    max-width: 100%;
+    margin-top: 5em; }
+    .portada .portadaParrafo {
+      width: 40%;
+      height: 18em;
+      background-color: rgba(255, 255, 255, 0.4);
+      color: #020f1a;
+      font-family: 'Cinzel Decorative', cursive;
+      position: absolute;
+      z-index: 1;
+      top: 20em; } }
+
+.portadaParrafo {
+  width: 100%;
+  height: 8em;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #020f1a;
+  font-family: 'Cinzel Decorative', cursive;
+  position: absolute;
+  z-index: 1;
+  top: 34em; }
+
+.imagenFondo {
+  background-color: #FFFFFF;
+  top: 8.5em;
+  height: 54vh;
+  max-width: 100%; }
+
+.transparente {
+  opacity: 0.5; }
