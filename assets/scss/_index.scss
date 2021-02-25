@@ -5,7 +5,7 @@
 .nav-link {
     font-family: $fuente-grande;
     font-size: $tam-subtitulo;
-    color: rgb(4, 4, 34) !important;
+    color:$texto-azul ;
     padding-right: 2rem !important;
     padding-left: 2rem !important;
     border-radius: 2rem;
@@ -116,22 +116,11 @@
         height: 8em;
         background-color: transparentize($color: #ffffff, $amount:0.6);
         color:$texto-oscazul;
-        font-family: 'Cinzel Decorative', cursive;
+        font-family: $fuente-titulo;
         position: absolute;
         z-index: 1;
         top:34em ;
     }
-
-.imagenFondo{
-    background-color: #FFFFFF;
-    top: 8.5em;
-    height: 54vh;
-    max-width: 100%;
-}
-.transparente{
-    opacity: 0.5;
-}
-
 
 
 @media (max-width:780px) {

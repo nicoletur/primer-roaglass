@@ -1,0 +1,106 @@
+ // pagina productos
+// linea cual es tu proximo proyecto
+.proximoProducto{
+    margin-top: 5em;
+        .cualEs {
+            font-family: $fuente-titulo;
+            padding-top: 1em;
+            height: 3.5em;
+            font-size: $tam-titulo;
+            background-color: $color-footer;
+            color:$texto-azulclaro;
+            word-spacing: 0.4em;
+        }
+}
+
+
+//linea Consulta con nosotros
+.categoriaProductos {
+    background-size: contain;
+    color: $texto-oscazul;
+    background: radial-gradient(#eef897, #bad8da);
+    font-family: $fuente-titulo;
+    animation:bounceInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+        h1{
+            margin-top: 1.5rem;
+            font-size: $tam-titulo;
+        }
+        h2{
+        font-family: $fuente-peque;
+        padding-bottom:0.5em;
+        font-size: $tam-subtitulo;
+        }
+}
+
+
+
+         // descripcion de cada producto collapse
+        .panel-heading {
+                padding: 0;
+                background-color: chartreuse;
+                border-left: 3px solid #5d67f0;
+                border-radius: initial;
+                border: none;
+                color: #fff;
+                padding: 0;
+                h4 {
+                    background-color: #c2e6f1;
+                    }
+        }
+        .panel-heading .panel-title a {
+            padding: 0.7em;
+            color: $texto-azul;}
+
+        .panel-heading .panel-title .collapsed {
+            background: radial-gradient(#eaecd0, #bad8da);
+            color: $texto-azul;}
+
+        .panel-title a {
+            text-align: center;
+            display: block;
+            color: $texto-oscazul;
+            position: relative;
+            font-size: $tam-subtitulo;
+            font-family: $fuente-grande;
+            font-weight: 600;
+                a:hover{
+            text-decoration: none;
+            }
+        }
+
+        .panel-body {
+        text-align: justify;
+        margin: 0 0.3em;
+        }
+
+        // detalle de estilo dentro de cada descripcion
+        .textoDescripcion{
+            color: $texto-azul;
+            h1{
+                font-family: $fuente-mediana;
+            }
+            p{
+                font-family: $fuente-peque;
+                font-size:$tam-peque;
+                font-weight: 600;
+            }
+        }
+
+        .listProduct{
+                align-items: center;
+                padding: 1em;
+                font-family:$fuente-grande;
+                font-weight: 600;
+            li{
+                list-style-image: url(../css/img/stained-glass-window.png);
+                color:$texto-oscazul;
+        }
+    }
+        .imagenDescripcion{
+            height: 16em;
+            max-width: 100%;
+
+        }

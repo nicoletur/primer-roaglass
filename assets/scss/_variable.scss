@@ -1,25 +1,28 @@
-
+$fuente-titulo:'Cinzel Decorative', cursive;
 $fuente-grande:'Cormorant Garamond', serif;
 $fuente-mediana: 'IM Fell Double Pica', serif;;
 $fuente-peque:'Roboto Slab', serif;
-$tam-xltitulo: 2rem;
+$tam-xltitulo: 1.7rem;
 $tam-titulo: 1.4rem;
 $tam-subtitulo: 1.2rem;
 $tam-parrafo: 1.0rem;
+$tam-peque:0.9rem;
 
 $transition-duration: 0.3s;
 $transition-delay: 0.2s;
 
-$texto-azul:rgb(2, 15, 26)5;
+$texto-azul:rgb(2, 15, 26);
 $texto-oscazul:rgb(2, 15, 26);
 $texto-azulclaro:rgb(200, 214, 236);
 
 $color-nav: rgb(255, 255, 255);
-$color-footer:rgb(2, 15, 26);
-$color-seccion:#f1ad92;
+$color-footer:rgb(3, 18, 31);
+$color-seccion:#c5edee;
 
 $media-queries:
 (tablet: (breakpoint: '(min-width: 480px) and (max-width: 768px)',),
- mobile: (breakpoint: '(max-width: 480px)'));
+mobile: (breakpoint: '(max-width: 480px)'));
 
+
+$mynewcolor:#77cccc;
 

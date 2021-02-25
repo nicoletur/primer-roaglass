@@ -6,7 +6,7 @@
 .nav-link {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
-  color: #040422 !important;
+  color: #020f1a;
   padding-right: 2rem !important;
   padding-left: 2rem !important;
   border-radius: 2rem;
@@ -30,7 +30,7 @@
   flex-flow: row wrap;
   justify-content: flex-start center;
   align-content: center;
-  background-color: #020f1a;
+  background-color: #03121f;
   color: #c8d6ec;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700; }
@@ -103,19 +103,10 @@
   height: 8em;
   background-color: rgba(255, 255, 255, 0.4);
   color: #020f1a;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
   position: absolute;
   z-index: 1;
   top: 34em; }
-
-.imagenFondo {
-  background-color: #FFFFFF;
-  top: 8.5em;
-  height: 54vh;
-  max-width: 100%; }
-
-.transparente {
-  opacity: 0.5; }
 
 @media (max-width: 780px) {
   .portada {
@@ -157,7 +148,7 @@
     font-family: "IM Fell Double Pica", serif;
     font-size: 1.4rem;
     font-weight: 500;
-    color: #020f1a 5;
+    color: #020f1a;
     display: inline-block;
     margin: 0 0.5rem;
     animation: fadeInBottomRight;
@@ -190,17 +181,17 @@
     width: calc(100% - 1rem);
     text-align: center; }
     .Primer__texto--titulo {
-      color: #020f1a 5;
+      color: #020f1a;
       font-family: "Cormorant Garamond", serif;
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 1.7rem;
       line-height: 2em;
       animation: heartBeat;
       animation-duration: 3s;
       animation-iteration-count: 10; }
     .Primer__texto--subtitulo {
       margin-top: 1em;
-      color: #020f1a 5;
+      color: #020f1a;
       font-weight: 600;
       font-family: "IM Fell Double Pica", serif;
       font-size: 1.4rem;
@@ -211,6 +202,96 @@ hr {
   height: 1em;
   margin-top: 1em;
   box-shadow: inset 0 1em 1.5em -1.5em black; }
+
+.proximoProducto {
+  margin-top: 5em; }
+  .proximoProducto .cualEs {
+    font-family: "Cinzel Decorative", cursive;
+    padding-top: 1em;
+    height: 3.5em;
+    font-size: 1.4rem;
+    background-color: #03121f;
+    color: #c8d6ec;
+    word-spacing: 0.4em; }
+
+.categoriaProductos {
+  background-size: contain;
+  color: #020f1a;
+  background: radial-gradient(#eef897, #bad8da);
+  font-family: "Cinzel Decorative", cursive;
+  animation: bounceInLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1; }
+  .categoriaProductos h1 {
+    margin-top: 1.5rem;
+    font-size: 1.4rem; }
+  .categoriaProductos h2 {
+    font-family: "Roboto Slab", serif;
+    padding-bottom: 0.5em;
+    font-size: 1.2rem; }
+
+.panel-heading {
+  padding: 0;
+  background-color: chartreuse;
+  border-left: 3px solid #5d67f0;
+  border-radius: initial;
+  border: none;
+  color: #fff;
+  padding: 0; }
+  .panel-heading h4 {
+    background-color: #c2e6f1; }
+
+.panel-heading .panel-title a {
+  padding: 0.7em;
+  color: #020f1a; }
+
+.panel-heading .panel-title .collapsed {
+  background: radial-gradient(#eaecd0, #bad8da);
+  color: #020f1a; }
+
+.panel-title a {
+  text-align: center;
+  display: block;
+  color: #020f1a;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600; }
+  .panel-title a a:hover {
+    text-decoration: none; }
+
+.panel-body {
+  text-align: justify;
+  margin: 0 0.3em; }
+
+.textoDescripcion {
+  color: #020f1a; }
+  .textoDescripcion h1 {
+    font-family: "IM Fell Double Pica", serif; }
+  .textoDescripcion p {
+    font-family: "Roboto Slab", serif;
+    font-size: 0.9rem;
+    font-weight: 600; }
+
+.listProduct {
+  align-items: center;
+  padding: 1em;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600; }
+  .listProduct li {
+    list-style-image: url(../css/img/stained-glass-window.png);
+    color: #020f1a; }
+
+.imagenDescripcion {
+  height: 16em;
+  max-width: 100%; }
+
+.ListImag {
+  margin-top: 6em; }
+  .ListImag .imgTamaño {
+    width: 15em;
+    height: 15em;
+    padding: 1em; }
 
 * {
   box-sizing: border-box; }
@@ -250,91 +331,6 @@ body {
 .slide5 {
   background-image: url(../css/img/shower-438928_1920.jpg); }
 
-.categoriaProductos {
-  margin-top: 8em;
-  color: #020f1a 5;
-  font-family: "Cormorant Garamond", serif; }
-  .categoriaProductos h2 {
-    padding-bottom: 0.5em; }
-
-.proximoProducto {
-  background-color: #f1ad92;
-  background-size: contain; }
-
-.cualEs {
-  font-size: 2em;
-  margin-top: 1rem; }
-
-.listaProductos {
-  font-size: 1.4rem;
-  color: #020f1a; }
-  .listaProductos p a:link {
-    text-decoration: none; }
-
-.detalle {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: center; }
-  .detalle .separador {
-    border-top: blue 1px solid;
-    height: 2em;
-    width: 100%;
-    background: linear-gradient(to bottom, #92c3eb, #c6cfd1); }
-  .detalle__block {
-    margin: 0.5rem;
-    width: calc(100% - 1rem); }
-    @media (min-width: 800px) {
-      .detalle__block {
-        width: calc(50% - 1rem); } }
-  .detalle__block--grande {
-    margin: 0.5rem;
-    width: 100%; }
-    @media (max-width: 880px) {
-      .detalle__block--grande {
-        width: calc(100%-1rem); } }
-
-.texto__title {
-  font-size: 1.4rem;
-  line-height: 3em;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  color: #020f1a; }
-  @media (max-width: 800px) {
-    .texto__title {
-      font-size: 1.25rem; } }
-
-.texto__text {
-  font-size: 1rem;
-  padding-bottom: 2em;
-  text-align: justify;
-  font-family: "Roboto Slab", serif;
-  font-weight: 400;
-  color: #020f1a; }
-
-.texto__imagen {
-  padding: 00.5em; }
-
-.texto__imagen--tamaño {
-  width: 20rem;
-  height: 20rem; }
-
-.texto__lista {
-  align-items: center;
-  padding: 1em; }
-
-.texto__lista--lista {
-  list-style-image: url(../css/img/stained-glass-window.png);
-  color: #020f1a; }
-
-.ListImag {
-  margin: 5em 1em 2em 3em; }
-
-.imgTamaño {
-  width: 15em;
-  height: 15em;
-  padding: 1em; }
-
 .empresa {
   display: flex;
   flex-flow: row wrap;
@@ -368,7 +364,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 2em 1em;
-  color: #020f1a 5;
+  color: #020f1a;
   font-size: 23pt;
   text-transform: uppercase;
   font-family: "Cormorant Garamond", serif; }
@@ -399,7 +395,7 @@ body {
   margin-left: auto; }
 
 .header {
-  color: #020f1a 5;
+  color: #020f1a;
   font-size: 1.4rem;
   padding: 10px; }
 
