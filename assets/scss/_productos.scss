@@ -1,25 +1,128 @@
- // pagina productos
-// linea cual es tu proximo proyecto
-.proximoProducto{
-    margin-top: 5em;
-        .cualEs {
-            font-family: $fuente-titulo;
-            padding-top: 1em;
-            height: 3.5em;
-            font-size: $tam-titulo;
-            background-color: $color-footer;
-            color:$texto-azulclaro;
-            word-spacing: 0.4em;
+     // descripcion de cada producto collapse
+    .margenArriba{
+        margin-top: 7em;
+    }
+    .panel-heading {
+            padding: 0;
+            border-left: 3px solid #5d67f0;
+            border-radius: initial;
+            border: none;
+            color: #fff;
+            padding: 0;
+            h4 {
+                background-color: #f1cfc2;
+                }
+    }
+        .panel-heading .panel-title a {
+            padding: 0.7em;
+            color: $texto-azul;
         }
-}
+        .panel-heading .panel-title .collapsed {
+            @include backgroundColor;
+            color: $texto-azul;
+        }
+            .panel-title a {
+                text-align: center;
+                display: block;
+                color: $texto-oscazul;
+                position: relative;
+                font-size: $tam-subtitulo;
+                font-family: $fuente-texto;
+                font-weight: 600;
+                    a:hover{
+                    text-decoration: none;
+                    }
+            }
 
+    .carousel-item{
+        text-align: center;
+        min-height: 24em;
 
-//linea Consulta con nosotros
+        h5{
+            font-family: $fuente-titulo;
+            color: $texto-azulclaro;
+            top:-5em;
+        }
+    }
+    .slide1{
+        background: url(../css/img/aluminio1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .slide2{
+        background: url(../css/img/aluminio2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .slide3{
+        background: url(../css/img/aluminio3.jpg) no-repeat center center;
+        background-size: contain;
+    }
+
+    .pvc1{
+        background: url(../css/img/pvc1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .pvc2{
+        background: url(../css/img/pvc2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .pvc3{
+        background: url(../css/img/pvc3.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .puerta1{
+        background: url(../css/img/puerta1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .puerta2{
+        background: url(../css/img/puerta2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .puerta3{
+        background: url(../css/img/puerta3.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .shower1{
+        background: url(../css/img/showerdoor1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .shower2{
+        background: url(../css/img/showerdoor2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .shower3{
+        background: url(../css/img/showerdoor3.jpg) no-repeat center center;
+    background-size: contain;
+    }
+    .barandal1{
+        background: url(../css/img/baranda-1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .barandal2{
+        background:url(../css/img/baranda2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .barandal3{
+        background: url(../css/img/baranda3.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .estruc1{
+        background: url(../css/img/estructura1.jpg) no-repeat center center;
+        background-size: contain;
+    }
+    .estruc2{
+        background: url(../css/img/estructura2.jpg) no-repeat center center;
+        background-size: contain;
+    }
+
+        //linea Consulta con nosotros
 .categoriaProductos {
     background-size: contain;
     color: $texto-oscazul;
-    background: radial-gradient(#eef897, #bad8da);
-    font-family: $fuente-titulo;
+    background: rgb(105,240,242);
+    background: -moz-radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
+    background: radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#69f0f2",endColorstr="#638fd9",GradientType=1);    font-family: $fuente-titulo;
     animation:bounceInLeft;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -29,61 +132,19 @@
             font-size: $tam-titulo;
         }
         h2{
-        font-family: $fuente-peque;
+        font-family: $fuente-texto;
         padding-bottom:0.5em;
         font-size: $tam-subtitulo;
         }
 }
 
 
-
-         // descripcion de cada producto collapse
-        .panel-heading {
-                padding: 0;
-                background-color: chartreuse;
-                border-left: 3px solid #5d67f0;
-                border-radius: initial;
-                border: none;
-                color: #fff;
-                padding: 0;
-                h4 {
-                    background-color: #c2e6f1;
-                    }
-        }
-        .panel-heading .panel-title a {
-            padding: 0.7em;
-            color: $texto-azul;}
-
-        .panel-heading .panel-title .collapsed {
-            background: radial-gradient(#eaecd0, #bad8da);
-            color: $texto-azul;}
-
-        .panel-title a {
-            text-align: center;
-            display: block;
-            color: $texto-oscazul;
-            position: relative;
-            font-size: $tam-subtitulo;
-            font-family: $fuente-grande;
-            font-weight: 600;
-                a:hover{
-            text-decoration: none;
-            }
-        }
-
-        .panel-body {
-        text-align: justify;
-        margin: 0 0.3em;
-        }
-
         // detalle de estilo dentro de cada descripcion
         .textoDescripcion{
             color: $texto-azul;
-            h1{
-                font-family: $fuente-mediana;
-            }
             p{
-                font-family: $fuente-peque;
+                padding: 2em 3em;
+                font-family: $fuente-texto;
                 font-size:$tam-peque;
                 font-weight: 600;
             }
@@ -92,10 +153,10 @@
         .listProduct{
                 align-items: center;
                 padding: 1em;
-                font-family:$fuente-grande;
+                font-family:$fuente-texto;
                 font-weight: 600;
             li{
-                list-style-image: url(../css/img/stained-glass-window.png);
+                list-style-image: url(../css/img/select.png) ;
                 color:$texto-oscazul;
         }
     }
@@ -104,3 +165,6 @@
             max-width: 100%;
 
         }
+
+
+

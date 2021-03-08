@@ -1,7 +1,7 @@
-$fuente-titulo:'Cinzel Decorative', cursive;
-$fuente-grande:'Cormorant Garamond', serif;
-$fuente-mediana: 'IM Fell Double Pica', serif;;
-$fuente-peque:'Roboto Slab', serif;
+$fuente-titulo:'Orbitron', sans-serif;
+$fuente-texto: 'Kodchasan', sans-serif;
+
+
 $tam-xltitulo: 1.7rem;
 $tam-titulo: 1.4rem;
 $tam-subtitulo: 1.2rem;
@@ -19,10 +19,15 @@ $color-nav: rgb(255, 255, 255);
 $color-footer:rgb(3, 18, 31);
 $color-seccion:#c5edee;
 
-$media-queries:
-(tablet: (breakpoint: '(min-width: 480px) and (max-width: 768px)',),
-mobile: (breakpoint: '(max-width: 480px)'));
 
 
-$mynewcolor:#77cccc;
+$mynewcolor:#76d8d8;
 
+@mixin backgroundColor {
+        background: rgb(99,176,228);
+        background: -moz-linear-gradient(167deg, rgba(99,176,228,1) 0%, rgba(128,190,228,1) 12%, rgba(195,227,226,1) 24%, rgba(220,244,243,1) 45%, rgba(195,227,226,1) 69%, rgba(128,190,228,1) 85%, rgba(99,176,228,1) 95%);
+        background: -webkit-linear-gradient(167deg, rgba(99,176,228,1) 0%, rgba(128,190,228,1) 12%, rgba(195,227,226,1) 24%, rgba(220,244,243,1) 45%, rgba(195,227,226,1) 69%, rgba(128,190,228,1) 85%, rgba(99,176,228,1) 95%);
+        background: linear-gradient(167deg, rgba(99,176,228,1) 0%, rgba(128,190,228,1) 12%, rgba(195,227,226,1) 24%, rgba(220,244,243,1) 45%, rgba(195,227,226,1) 69%, rgba(128,190,228,1) 85%, rgba(99,176,228,1) 95%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#63b0e4",endColorstr="#63b0e4",GradientType=1);
+    
+  }
