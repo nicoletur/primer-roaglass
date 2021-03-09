@@ -10,16 +10,14 @@
         @media (max-width: 800px) { width: calc(100% - 1rem); }
         }
     &__nuestra--titulo{
-        font-family: $fuente-titulo;
-        color: $texto-oscazul;
+        @include oscTitulo;
         text-transform:uppercase;
         text-decoration: underline rgb(80, 250, 250);
         }
     &__nuestra--texto{
+        @include OscSubtitulo;
         text-align: justify;
-        color: $texto-oscazul;
-	    line-height: 2em;
-	    font-family: $fuente-texto;
+        line-height: 2em;
 	    font-weight: 600;
         }
     &__logo{
@@ -41,19 +39,17 @@
 
 // texto porque decidirte por roaglas
 .porque>h2{
+    @include oscTitulo;
     background-color: $mynewcolor;
     width: 100%;
     text-align:center;
     padding: 2em 1em;
-    color: $texto-azul;
-    font-size: 23pt;
     text-transform: uppercase;
-    font-family:$fuente-titulo;
     }
 
 
 
-    /*Estilos Base*/
+    // imagen con texto debajo
 .contenedorImg {
     width: 20em;
     height: 25em;
@@ -64,79 +60,53 @@
     cursor: default;
 
     }
-    .contenedorImg .mascara {
-    width: 20em;
-    height: 20em;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0
-    }
-    .contenedorImg img {
-    display: block;
-    position: relative;
-    max-width: 100%;
-    height: 20em;
-    
-    }
-    .contenedorImg h3 {
-    text-transform: uppercase;
-    font-family: $fuente-titulo;
-    color: $texto-oscazul;
-    text-align: center;
-    position: relative;
-    margin: 1em 0 0 0
-    }
-    .contenedorImg p {
-    font-family: $fuente-texto;
-    position: relative;
-    color: $texto-oscazul;
-    padding: 10px 20px 10px;
-    text-align: center
-    }
-     /*Ejemplo 1*/
-     .efectoImg img {
+        .contenedorImg .mascara {
+        width: 20em;
+        height: 20em;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0
+        }
+            .contenedorImg img {
+            display: block;
+            position: relative;
+            max-width: 100%;
+            height: 20em;
+            }
+            .contenedorImg h3 {
+            @include oscTitulo;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            margin: 1em 0 0 0
+            }
+            .contenedorImg p {
+            @include OscPeque;
+            position: relative;
+            padding: 2em 1.5em;
+            text-align: center
+            }
+    //  contenedor de la imagen
+    .efectoImg img {
         transform: scaleY(1);
         transition: all 0.7s ease-in-out;
-        
         }
         .efectoImg .mascara {
         @include backgroundColor;
         transition: all 0.5s linear;
         opacity: 0;
         }
-        .efectoImg h2{
-        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-        background: transparent;
-        margin: 20px 40px 0px 40px;
-        transform: scale(0);
-        color: $texto-oscazul;
-        transition: all 0.5s linear;
-        opacity: 0;
-        }
-        .efectoImg p {
-        color: $texto-oscazul;
-        opacity: 0;
-        transform: scale(0);
-        transition: all 0.5s linear;
-        }
-        .efectoImg a.link {
-        opacity: 0;
-        transform: scale(0);
-        transition: all 0.5s linear;
-        background-color: rgba(119, 80, 21, 0.9);
-        }
-        
-        .efectoImg:hover img {
-        transform: scale(10);
-        opacity: 0;
-        }
-        .efectoImg:hover .mascara {
-        opacity: 1;
-        }
-        .efectoImg:hover h2,
-        .efectoImg:hover p,
-        .efectoImg:hover a.link{
-        transform: scale(1);
-        opacity: 1;
-        }
+            .efectoImg:hover img {
+            transform: scale(10);
+            opacity: 0;
+            }
+            .efectoImg:hover .mascara {
+            opacity: 1;
+            }
+            .efectoImg:hover h3,
+            .efectoImg:hover p,
+            .efectoImg:hover a.link{
+            transform: scale(1);
+            opacity: 1;
+            }

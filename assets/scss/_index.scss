@@ -1,46 +1,16 @@
-/*NAVBAR*/
-.navbar {
-    background-color: $color-nav;
-        }
-        .navbar-light .navbar-nav .nav-link {
-            color:$texto-oscazul;
-        }
-.nav-link {
-    font-family: $fuente-titulo;
-    font-size: $tam-subtitulo;
-    padding-right: 2rem !important;
-    padding-left: 2rem !important;
-    border-radius: 2rem;
-    font-weight: 600;
-    }
-	.nav-item :hover {
-		box-shadow: inset 0 0 20px rgba(150, 229, 235, 0.5), 0 0 20px rgba(9, 184, 238, 0.4);
-		outline-offset: 80px;
-		text-shadow: 1px 1px 6px rgb(232, 243, 245);
-		}
-.logo {
-    width: 220px;
-    padding-left: 1em;
-    }
-.LinkContact, .LinkQuien, .LinkGal, .LinkProduc, .LinkIndex {
-    color: rgb(106, 163, 248)!important;
-    font-weight: 600;
-    }
 
 // Texto e imagen de portada
     .portada{
-        background: url(../css/img/5435089577_08a780296e_k.jpg) no-repeat center center;
-        background-size: cover;
+        background: url(../css/img/5435089577_08a780296e_k.jpg);
+        @include bg-images;
         height: 40em;
         max-width: 100%;
         margin-top: 1em;
-    
         .portadaParrafo{
             width: 100%;
             height: 8em;
             background-color: transparentize($color: #ffffff, $amount:0.6);
-            color:$texto-oscazul;
-            font-family: $fuente-titulo;
+            @include oscTitulo;
             position: absolute;
             z-index: 1;
             top:34em ;
@@ -62,18 +32,16 @@
         text-align: center;
         margin-top: 1em;
         margin-bottom: 2em;
-    
             & a {
-            position: relative;
-            display: block;
-            padding: 0.5em;
-            font-family: $fuente-texto;
-            font-size: $tam-xltitulo;
-            color: $texto-oscazul;
-            font-weight: 600;
-            
-            }
-            & a::before {
+                position: relative;
+                display: block;
+                padding: 0.5em;
+                font-family: $fuente-texto;
+                font-size: $tam-xltitulo;
+                color: $texto-oscazul;
+                font-weight: 600;
+                }
+                :before {
                 content: '';
                 text-decoration: none;
                 position: absolute;
@@ -81,7 +49,7 @@
                 left: 0;
                 width: 100%;
                 height: 5px;
-                background: linear-gradient(to right, #d2e5f1, #9ad0f0, #55a0e7);
+                background: linear-gradient(to right, #d2e5f1, #9ad0f0, #5aaefd);
                 z-index: 1;
                 transform: scaleX(0);
                 transform-origin: left;
@@ -90,124 +58,52 @@
                     & a:hover::before {
                     transform: scaleX(1);
                     }
-                    &[data-animation="bonus"] a:hover::before {
-                        transform-origin: left;
-                        transform: scaleX(1);
-                        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
-                    }
-    }
+        }
 
 // texto e imagenes
-.div-imagen {
-    display:inline-block;
-    position:relative;
-    margin: 1em;
-    }
-        .div-imagen>div {
-        position:absolute;
-        z-index:-1;
-        top:0;
-        left:0;
-        z-index:-1;
-        padding:10px;
-        margin:0;
+    .div-imagen {
+        display:inline-block;
+        position:relative;
+        margin: 1em;
         }
-    .text{
-        padding-top: 20%;
-        height: 20em;
-        width: 100%;
-        font-size: $tam-subtitulo;
-        font-family: $fuente-texto;
-        color: $texto-oscazul;
-        }
-    .desvanecer{
-        height: 15em;
-        width: 100%;
-        }
-        .desvanecer:hover {
-            opacity: 0.07;
-            -webkit-transition: opacity 500ms;
-            -moz-transition: opacity 500ms;
-            -o-transition: opacity 500ms;
-            -ms-transition: opacity 500ms;
-            transition: opacity 500ms;
+            .div-imagen>div {
+            position:absolute;
+            z-index:-1;
+            top:0;
+            left:0;
+            z-index:-1;
+            padding:10px;
+            margin:0;
             }
-
-            // texto cotiza con nosotros
-        .textoTitulo {
-            margin: 3em;
-            color: $texto-azul;
-            font-family: $fuente-titulo;
-            font-weight:bold;
-            line-height: 2em;
+        .text{
+            @include OscSubtitulo;
+            padding-top: 20%;
+            height: 20em;
+            width: 100%;
             }
-            .btn-primary, .btn--primary:hover,
-            .btn-primary:active {
-            color: $texto-oscazul;
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-            background-color: #2fcde2;
+        .desvanecer{
+            height: 15em;
+            width: 100%;
             }
+            .desvanecer:hover {
+                opacity: 0.07;
+                -webkit-transition: opacity 500ms;
+                -moz-transition: opacity 500ms;
+                -o-transition: opacity 500ms;
+                -ms-transition: opacity 500ms;
+                transition: opacity 500ms;
+                }
 
+                // texto cotiza con nosotros
+                .btn-primary, .btn--primary:hover,
+                .btn-primary:active {
+                    @include oscTitulo;
+                    padding: 1em;
+                    margin: 1em;
+                    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                    background-color: #2fcde2;
+                    }
 
-/*PIE de PAGINA*/
-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    background-color: $color-footer;
-    color:  $texto-azulclaro;
-    font-family:$fuente-titulo;
-}
-    .footerContacto{
-    text-align: center;
-    margin-top: 1em;
-    }
-
-    .footerIcon{
-        margin-top: 1em;
-        width: 4em ;
-        margin-left: 1em;
-        }
-    .footerIcon:hover{
-        animation: flip;
-        animation-duration: 1s;
-        animation-delay: inherit;
-    }
-    .fono-contenido{
-        background-color: $color-footer;
-        color: $texto-azulclaro;
-        width:300px;
-        padding: 10px 20px;
-        margin: 20% auto;
-        position: relative;
-    }
-    .fono{
-        background-color: rgba(0,0,0,.8);
-        position:fixed;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        opacity:0;
-        pointer-events:none;
-        transition: all 1s;
-    }
-    #telefono:target{
-        opacity:1;
-        pointer-events:auto;
-    }
-    .email-contenido{
-        @extend .fono-contenido;
-        width: 28em
-    }
-    .email{
-    @extend .fono;
-    }
-    #correo:target{
-        opacity:1;
-        pointer-events:auto;
-    }
 
 
 hr{

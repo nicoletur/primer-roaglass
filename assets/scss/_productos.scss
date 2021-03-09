@@ -15,160 +15,114 @@
     }
         .panel-heading .panel-title a {
             padding: 0.7em;
-            color: $texto-azul;
+            color: $texto-oscazul;
         }
         .panel-heading .panel-title .collapsed {
             @include backgroundColor;
-            color: $texto-azul;
+            color: $texto-oscazul;
         }
             .panel-title a {
+                @include OscSubtitulo;
                 text-align: center;
                 display: block;
-                color: $texto-oscazul;
                 position: relative;
-                font-size: $tam-subtitulo;
-                font-family: $fuente-texto;
                 font-weight: 600;
                     a:hover{
                     text-decoration: none;
                     }
             }
 
+    // detalle de estilo dentro de cada descripcion
+        .textoDescripcion{
+            @include OscPeque;
+            p{
+                padding: 2em 3em;
+            }
+        }
+        .listProduct{
+                @include OscPeque;
+                align-items: center;
+                padding: 1em;
+                li{
+                list-style-image: url(../css/img/select.png) ;
+                }
+        }
+        .imagenDescripcion{
+            height: 16em;
+            max-width: 100%;
+        }
+
+
+    // carousel de imagenes dentro de las descripciones
     .carousel-item{
         text-align: center;
         min-height: 24em;
-
+        // texto dentro del carousel de contacto
         h5{
-            font-family: $fuente-titulo;
-            color: $texto-azulclaro;
+            @include oscTitulo;
             top:-5em;
         }
-
         img{
             padding-top: 3em;
         }
     }
-    .slide1{
-        background: url(../css/img/aluminio1.jpg);
-        @extend %btn%bg-images;
-    }
-    .slide2{
-        background: url(../css/img/aluminio2.jpg);
-        @extend %btn%bg-images;
-    }
-    .slide3{
-        background: url(../css/img/aluminio3.jpg);
-        @extend %btn%bg-images;
-    }
 
-    .pvc1{
-        background: url(../css/img/pvc1.jpg);
-        @extend %btn%bg-images;
-    }
-    .pvc2{
-        background: url(../css/img/pvc2.jpg);
-        @extend %btn%bg-images;
-    }
-    .pvc3{
-        background: url(../css/img/pvc3.jpg);
-        @extend %btn%bg-images;
-    }
-    .puerta1{
-        background: url(../css/img/puerta1.jpg);
-        @extend %btn%bg-images;
-    }
-    .puerta2{
-        background: url(../css/img/puerta2.jpg);
-        @extend %btn%bg-images;
-    }
-    .puerta3{
-        background: url(../css/img/puerta3.jpg);
-        @extend %btn%bg-images;
-    }
-    .shower1{
-        background: url(../css/img/showerdoor1.jpg);
-        @extend %btn%bg-images;
-    }
-    .shower2{
-        background: url(../css/img/showerdoor2.jpg);
-        @extend %btn%bg-images;
-    }
-    .shower3{
-        background: url(../css/img/showerdoor3.jpg);
-    @extend %btn%bg-images;
-    }
-    .barandal1{
-        background: url(../css/img/baranda-1.jpg);
-        @extend %btn%bg-images;
-    }
-    .barandal2{
-        background:url(../css/img/baranda2.jpg);
-        @extend %btn%bg-images;
-    }
-    .barandal3{
-        background: url(../css/img/baranda3.jpg);
-        @extend %btn%bg-images;
+    // imagenes de los carouseles
+    @each $slide in 1, 2, 3 {
+        .slide#{$slide} {
+            @include bg-images;
+            background-image:url('../css/img/aluminio#{$slide}.jpg');
+        }
+        }
+    @each $pvc in 1, 2, 3 {
+        .pvc#{$pvc} {
+        @include bg-images;
+        background-image:url('../css/img/pvc#{$pvc}.jpg');
+        }
+        }
+    @each $puerta in 1, 2, 3 {
+        .puerta#{$puerta} {
+        @include bg-images;
+        background-image:url('../css/img/puerta#{$puerta}.jpg');
+        }
+        }
+    @each $shower in 1, 2, 3 {
+        .shower#{$shower} {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        background-image:url('../css/img/showerdoor#{$shower}.jpg');
+        }
+        }
+    @each $barandal in 1, 2, 3 {
+        .barandal#{$barandal} {
+        @include bg-images;
+        background-image:url('../css/img/baranda#{$barandal}.jpg');
+        }
     }
     .estruc1{
         background: url(../css/img/estructura1.jpg);
-        @extend %btn%bg-images;
+        @include bg-images;
     }
     .estruc2{
         background: url(../css/img/estructura2.jpg);
-        @extend %btn%bg-images;
+        @include bg-images;
     }
 
         //linea Consulta con nosotros
-.categoriaProductos {
-    background-size: contain;
-    color: $texto-oscazul;
-    background: rgb(105,240,242);
-    background: -moz-radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
-    background: radial-gradient(circle, rgba(105,240,242,1) 10%, rgba(3,208,249,1) 51%, rgba(99,143,217,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#69f0f2",endColorstr="#638fd9",GradientType=1);    font-family: $fuente-titulo;
-    animation:bounceInLeft;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-
-        h1{
-            margin-top: 1.5rem;
-            font-size: $tam-titulo;
-        }
-        h2{
-        font-family: $fuente-texto;
-        padding-bottom:0.5em;
-        font-size: $tam-subtitulo;
-        }
-}
-
-
-        // detalle de estilo dentro de cada descripcion
-        .textoDescripcion{
-            color: $texto-azul;
-            p{
-                padding: 2em 3em;
-                font-family: $fuente-texto;
-                font-size:$tam-peque;
-                font-weight: 600;
-            }
+        .categoriaProductos {
+            @include backgroundColor;
+            @include oscTitulo;
+            background-size: contain;
+            color: $texto-oscazul;
+            animation:bounceInLeft;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            padding: 2em 1.5em;
         }
 
-        .listProduct{
-                align-items: center;
-                padding: 1em;
-                font-family:$fuente-texto;
-                font-weight: 600;
-            li{
-                list-style-image: url(../css/img/select.png) ;
-                color:$texto-oscazul;
-        }
-    }
-        .imagenDescripcion{
-            height: 16em;
-            max-width: 100%;
 
-        }
 
 
 
