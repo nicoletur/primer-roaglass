@@ -31,3 +31,10 @@ $mynewcolor:#76d8d8;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#63b0e4",endColorstr="#63b0e4",GradientType=1);
     
   }
+
+  %bg-images {
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      }

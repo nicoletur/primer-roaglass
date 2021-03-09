@@ -43,75 +43,79 @@
             color: $texto-azulclaro;
             top:-5em;
         }
+
+        img{
+            padding-top: 3em;
+        }
     }
     .slide1{
-        background: url(../css/img/aluminio1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/aluminio1.jpg);
+        @extend %btn%bg-images;
     }
     .slide2{
-        background: url(../css/img/aluminio2.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/aluminio2.jpg);
+        @extend %btn%bg-images;
     }
     .slide3{
-        background: url(../css/img/aluminio3.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/aluminio3.jpg);
+        @extend %btn%bg-images;
     }
 
     .pvc1{
-        background: url(../css/img/pvc1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/pvc1.jpg);
+        @extend %btn%bg-images;
     }
     .pvc2{
-        background: url(../css/img/pvc2.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/pvc2.jpg);
+        @extend %btn%bg-images;
     }
     .pvc3{
-        background: url(../css/img/pvc3.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/pvc3.jpg);
+        @extend %btn%bg-images;
     }
     .puerta1{
-        background: url(../css/img/puerta1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/puerta1.jpg);
+        @extend %btn%bg-images;
     }
     .puerta2{
-        background: url(../css/img/puerta2.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/puerta2.jpg);
+        @extend %btn%bg-images;
     }
     .puerta3{
-        background: url(../css/img/puerta3.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/puerta3.jpg);
+        @extend %btn%bg-images;
     }
     .shower1{
-        background: url(../css/img/showerdoor1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/showerdoor1.jpg);
+        @extend %btn%bg-images;
     }
     .shower2{
-        background: url(../css/img/showerdoor2.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/showerdoor2.jpg);
+        @extend %btn%bg-images;
     }
     .shower3{
-        background: url(../css/img/showerdoor3.jpg) no-repeat center center;
-    background-size: contain;
+        background: url(../css/img/showerdoor3.jpg);
+    @extend %btn%bg-images;
     }
     .barandal1{
-        background: url(../css/img/baranda-1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/baranda-1.jpg);
+        @extend %btn%bg-images;
     }
     .barandal2{
-        background:url(../css/img/baranda2.jpg) no-repeat center center;
-        background-size: contain;
+        background:url(../css/img/baranda2.jpg);
+        @extend %btn%bg-images;
     }
     .barandal3{
-        background: url(../css/img/baranda3.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/baranda3.jpg);
+        @extend %btn%bg-images;
     }
     .estruc1{
-        background: url(../css/img/estructura1.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/estructura1.jpg);
+        @extend %btn%bg-images;
     }
     .estruc2{
-        background: url(../css/img/estructura2.jpg) no-repeat center center;
-        background-size: contain;
+        background: url(../css/img/estructura2.jpg);
+        @extend %btn%bg-images;
     }
 
         //linea Consulta con nosotros
